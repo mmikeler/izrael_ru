@@ -1,0 +1,29 @@
+@media (max-width: 1000px) {
+
+    /* TIPOGRAPHY */
+    h1,
+    h2 {
+        font-size: 60px;
+    }
+
+    .top-bar {
+        position: relative;
+    }
+
+    .top-bar .container {
+        border-radius: 0;
+    }
+
+    .logo {
+        margin: 15px auto;
+        display: block;
+    }
+
+    .slogan {
+        display: none;
+    }
+
+    .tags {
+        flex-direction: column;
+    }
+}

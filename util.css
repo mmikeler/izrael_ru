@@ -1,0 +1,160 @@
+/* FONTS */
+@font-face {
+  font-family: 'Decor';
+  src: url('./fonts/28_days_later_cyr.ttf');
+}
+
+@font-face {
+  font-family: 'Normal';
+  src: url('./fonts/MuseoSansCyrl_1.otf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 22px;
+  font-family: 'Normal', serif;
+}
+
+/* COLORS */
+.blue {
+  color: #00b2e4;
+}
+
+.bg-blue {
+  background-color: #00b2e4;
+}
+
+.dark {
+  color: #21333c;
+}
+
+.bg-dark {
+  background-color: #21333c;
+}
+
+.yel {
+  color: #ffffcc;
+}
+
+.bg-yel {
+  background-color: #ffffcc;
+}
+
+.gray {
+  color: #8a8e93;
+}
+
+.bg-gray {
+  background-color: #8a8e93;
+}
+
+.orange {
+  color: #f9bf34;
+}
+
+.bg-orange {
+  background-color: #f9bf34;
+}
+
+.white {
+  color: #fff;
+}
+
+/* BUTTONS */
+.bbtn,
+.bbtn--yel,
+.bbtn--small {
+  padding: 10px 40px;
+  color: #21333c;
+  background-color: #00b2e4;
+  font-size: 24px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  border-radius: 150px;
+  font-family: 'Decor';
+  cursor: pointer;
+}
+
+.bbtn:hover,
+.bbtn--yel:hover,
+.bbtn--small:hover,
+.bbtn--small.current {
+  text-decoration: none;
+  background-color: #21333c;
+  color: #ffffcc;
+}
+
+.bbtn--yel {
+  background-color: #ffffcc;
+}
+
+.bbtn--small {
+  font-family: inherit;
+  font-size: 22px;
+  text-transform: none;
+  color: #fff;
+  padding: 5px 30px;
+}
+
+/* TIPOGRAPHY */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Decor';
+}
+
+h1,
+h2 {
+  font-size: 80px;
+}
+
+.title {
+  font-family: 'Decor';
+}
+
+.link {
+  color: inherit;
+}
+
+.link:hover,
+.nav li a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.tt {
+  text-transform: uppercase;
+}
+
+/* UTIL */
+.h100p {
+  height: 100%;
+}
+
+/* SVG */
+.triangle-top,
+.triangle-bottom {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.triangle-bottom {
+  transform: rotate(180deg);
+  top: auto;
+  bottom: 0;
+}
+
+.preloader {
+  width: 100%;
+  height: 100px;
+  background: url('./img/preloader.svg') no-repeat center / 100px;
+}
