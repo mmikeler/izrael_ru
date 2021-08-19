@@ -1,9 +1,11 @@
+@media (min-width: 769px) {}
+
 @media (max-width: 1000px) {
 
     /* TIPOGRAPHY */
     h1,
     h2 {
-        font-size: 60px;
+        font-size: 60px !important;
     }
 
     .top-bar {
@@ -23,7 +25,35 @@
         display: none;
     }
 
+    .nav-wrapper {
+        padding: 0 20px;
+    }
+
     .tags {
         flex-direction: column;
+    }
+
+    .events-app {
+        flex-direction: column;
+    }
+
+    .s8 .nav {
+        align-items: center;
+    }
+
+    .s8 .col-12 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+
+    h1,
+    h2 {
+        font-size: 40px !important;
+    }
+
+    .calendar {
+        min-width: auto;
     }
 }

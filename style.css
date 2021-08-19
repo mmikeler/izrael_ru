@@ -9,6 +9,7 @@
   top: 0;
   width: 100%;
   z-index: 99;
+  overflow: hidden;
 }
 
 .top-bar .container {
@@ -81,6 +82,7 @@
   font-size: 26px;
   line-height: 1.2;
   margin: 70px 0;
+  max-width: 500px;
 }
 
 /* S2 */
@@ -90,7 +92,6 @@
 }
 
 .s2-content {
-  max-width: 645px;
   width: 100%;
   margin-left: auto;
   box-shadow: 0 0 30px 50px #fff;
@@ -164,6 +165,7 @@
   padding: 120px 0;
   position: relative;
   background: url('./img/s4-bg.jpg') no-repeat center / cover;
+  min-height: 1500px;
 }
 
 .s4 h2 {
@@ -176,4 +178,157 @@
   text-decoration: underline;
   margin: 50px auto;
   display: table;
+}
+
+/* S5 Events Calendar*/
+.s5 {
+  margin: 120px 0;
+}
+
+.events-app {
+  display: flex;
+  align-items: stretch;
+  background: url('./img/calendar-bg.jpg') no-repeat center / cover;
+  border-radius: 15px;
+  box-shadow: 4px 3px 18px rgba(0, 0, 0, 0.23);
+}
+
+.events-app .post-preview {
+  padding: 40px;
+  background: transparent;
+}
+
+.events-app .post-preview .post-preview__date {
+  margin: 20px 0;
+}
+
+.s5 .post-preview__date {
+  color: #8a8e93;
+}
+
+.events-app .post-preview .post-preview__more {
+  color: #00b3e5;
+  align-self: flex-start;
+}
+
+.events-app .post-preview .post-preview__more:hover {
+  padding-left: 20px;
+}
+
+.calendar {
+  background-color: #182329;
+  box-shadow: 4px 3px 18px rgba(0, 0, 0, 0.23);
+  color: #fff;
+  font-size: 22px;
+  min-width: 500px;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.tavo-calendar__header,
+.tavo-calendar__week-names {
+  background-color: transparent;
+}
+
+.tavo-calendar__week-names {
+  color: #8a8e93;
+}
+
+.tavo-calendar__day:after {
+  content: '';
+  padding-top: 100%;
+  display: block;
+}
+
+.tavo-calendar__day {
+  position: relative;
+}
+
+.tavo-calendar__day span {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 70%;
+  font-size: 22px;
+}
+
+.tavo-calendar__day_abs-today {
+  background-color: #ffffcc;
+  color: #182329;
+  border-radius: 5px;
+}
+
+.tavo-calendar__day_select span,
+.tavo-calendar__day span:hover {
+  background-color: transparent;
+  color: inherit;
+  border-radius: 5px;
+}
+
+.tavo-calendar__day_select span,
+.tavo-calendar__day_select span:hover {
+  background-color: #00b2e4;
+  color: #1a2a33;
+  cursor: pointer;
+}
+
+/* S7 Friends */
+.s7 {
+  padding: 90px 0;
+  background-color: rgba(27, 43, 52, 0.08);
+}
+
+.s7 h2 {
+  margin-bottom: 80px;
+}
+
+.s7 img {
+  display: block;
+  margin: 20px auto;
+}
+
+/* S8 */
+.s8 {
+  padding: 115px 0;
+}
+
+.widget-title {
+  font-size: 26px;
+  margin-bottom: 15px;
+  filter: drop-shadow(4px 4px 18px rgb(255 255 255 / 30%));
+}
+
+footer .nav {
+  flex-direction: column;
+  text-align: left;
+  font-size: 18px;
+  align-items: flex-start;
+}
+
+footer .nav li {
+  margin-bottom: 5px;
+}
+
+footer .nav li a {
+  padding: 5px;
+}
+
+footer .nav li a:hover {
+  margin-left: 5px;
+  color: #ffffcc;
+}
+
+.footer-info {
+  font-size: 15px;
+}
+
+.s8 .col-12 {
+  margin-bottom: 20px;
 }
