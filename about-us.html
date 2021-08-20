@@ -4,59 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
+    <title>About Us page</title>
     <!-- STYLES -->
     <link rel="stylesheet" href="./TavoCalendar-master/dist/tavo-calendar.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="util.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="response.css">
     
-<body>
+<body class="about-us">
   <!-- TOP BAR -->
-    <div class="top-bar">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-3 col-lg-2">
-            <img class="logo" src="img/logo.png" />
+  <div class="top-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-3 col-lg-2">
+          <img class="logo" src="img/logo.png" />
+        </div>
+        <div class="col-12 col-md-9 col-lg-10 justify-center">
+          <div class="top-bar-header">
+            <img class="slogan" src="./img/slogan.png" alt="">
+            <img class="mobile-logo" src="./img/logo.png" />
+            <button class="bbtn">Личный кабинет</button>
+            <i class="bi bi-list menu-bar"></i>
           </div>
-          <div class="col-12 col-md-9 col-lg-10 justify-center">
-            <div class="top-bar-header">
-              <img class="slogan" src="./img/slogan.png" alt="">
-              <button class="bbtn">Личный кабинет</button>
-            </div>
-            <div class="nav-wrapper">
-              <ul class="nav main-menu">
-                <li><a href="about-us.html">О нас</a></li>
-                <li><a href="news.html">Новости</a></li>
-                <li><a href="/cars.html">Внедорожники</a></li>
-                <li><a href="#">Форум</a></li>
-                <li><a href="/roots.html">Маршруты</a></li>
-                <li><a href="/events.html">Календарь</a></li>
-                <li><a href="/media.html">Медиа</a></li>
-              </ul>
-            </div>
+          <div class="nav-wrapper">
+            <ul class="nav main-menu">
+              <li><a class="current-menu-item" href="about-us.html">О нас</a></li>
+              <li><a href="news.html">Новости</a></li>
+              <li><a href="/cars.html">Внедорожники</a></li>
+              <li><a href="#">Форум</a></li>
+              <li><a href="/roots.html">Маршруты</a></li>
+              <li><a href="/events.html">Календарь</a></li>
+              <li><a href="/media.html">Медиа</a></li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
+  </div>
   <!-- FIRST SCREEN -->
-    <section id="first-screen" class="fs">
-      <div class="container h100p">
-        <div class="row h100p">
-          <div class="col-12 col-lg-10 content-wrapper h100p">
-            <div class="content">
-              <h1 class="blue"><i class="white tt">Клуб</i><br />4×4 Израиль.ru лит</h1>
-              <p class="white">Вступай в наше сообщество, заводи новых друзей по интересам, делись своими историями и опытом.</p>
-              <button class="bbtn--yel">Вступить в клуб</button>
+  <section id="first-screen" class="fs">
+    <div class="container h100p">
+      <div class="row h100p">
+        <div class="col-12 col-lg-10 content-wrapper h100p">
+          <div class="content">
+            <h1 class="blue white tt">Проект <span class="blue">4×4 Израиль.ru</span><br /><span class="bb">Наша история</span></h1>
+            <p class="white">Вступай в наше сообщество, заводи новых друзей по интересам, делись своими историями и опытом.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- S2 -->
+  <section id="s2" class="s2">
+    <div class="container s2-container">
+      <div class="col-12">
+        <div class="we-are box-shadow">
+          <div class="title font-normal text-shadow">МЫ - ЭТО</div>
+          <div class="we-are__list d-flex flex-wrap">
+            <div class="we-are__item col-12 col-md-6 col-lg-4">
+              <img src="./img/icons/we-are-1.png" class="we-are__item-icon" alt="" />
+              <div class="we-are__item-title">Экстрим</div>
+              <div class="we-are__item-caption">Lorem ipsum dolor sit amet, consectetum</div>
+            </div>
+            <div class="we-are__item col-12 col-md-6 col-lg-4">
+              <img src="./img/icons/we-are-2.png" class="we-are__item-icon" alt="" />
+              <div class="we-are__item-title">Клуб по интересам</div>
+              <div class="we-are__item-caption">Lorem ipsum dolor sit amet, consectetum</div>
+            </div>
+            <div class="we-are__item col-12 col-md-6 col-lg-4">
+              <img src="./img/icons/we-are-3.png" class="we-are__item-icon" alt="" />
+              <div class="we-are__item-title">Дружная команда</div>
+              <div class="we-are__item-caption">Lorem ipsum dolor sit amet, consectetum</div>
+            </div>
+            <div class="we-are__item col-12 col-md-6 col-lg-4">
+              <img src="./img/icons/we-are-4.png" class="we-are__item-icon" alt="" />
+              <div class="we-are__item-title">Приключения</div>
+              <div class="we-are__item-caption">Lorem ipsum dolor sit amet, consectetum</div>
+            </div>
+            <div class="we-are__item col-12 col-md-6 col-lg-4">
+              <img src="./img/icons/we-are-5.png" class="we-are__item-icon" alt="" />
+              <div class="we-are__item-title">Обучение</div>
+              <div class="we-are__item-caption">Lorem ipsum dolor sit amet, consectetum</div>
+            </div>
+            <div class="we-are__item col-12 col-md-6 col-lg-4">
+              <img src="./img/icons/we-are-6.png" class="we-are__item-icon" alt="" />
+              <div class="we-are__item-title">Крутые тачки</div>
+              <div class="we-are__item-caption">Lorem ipsum dolor sit amet, consectetum</div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  <!-- S2 -->
-  <section id="s2" class="s2">
-    <div class="container s2-container">
       <div class="col-12 col-lg-8 s2-content">
         <h2>4×4 Израиль.ru лит</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
@@ -65,92 +104,30 @@
       </div>
     </div>
   </section>
-  <!-- S3 -->
-    <section id="s3" class="s3">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2>Новости</h2>
-            <div class="cat-controller">
-              <button class="bbtn--small current">Категория</button>
-              <button class="bbtn--small">Категория</button>
-            </div>
-            <div class="row post-list align-items-stretch">
-              <!-- POST -->
-              <div class="col-12 col-lg-5 post-preview__wrapper">
-                <div class="post-preview">
-                  <div class="post-preview__date">16.08.21</div>
-                  <div class="post-preview__title">Заголовок записи</div>
-                  <div class="tags d-flex align-center">
-                    <a href="#">#Новости</a>
-                    <a href="#">#Событие</a>
-                    <a href="#">#Объявление</a>
-                  </div>
-                  <p class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                  <a href="#" class="post-preview__more">Подробнее >></a>
-                </div>
-              </div>
-              <!-- END POST -->
-              <!-- POST -->
-              <div class="col-12 col-lg-7 post-preview__wrapper">
-                <div class="post-preview">
-                  <div class="post-preview__date">16.08.21</div>
-                  <div class="post-preview__title">Заголовок записи</div>
-                  <div class="tags d-flex align-center">
-                    <a href="#">#Новости</a>
-                    <a href="#">#Событие</a>
-                    <a href="#">#Объявление</a>
-                  </div>
-                  <p class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                  <a href="#" class="post-preview__more">Подробнее >></a>
-                </div>
-              </div>
-              <!-- END POST -->
-            </div>
-          </div>
+  <section class="about-us__s4">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="number">4 000</div>
+          <div class="caption">путешествий по территории Израиля</div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="number">2 800</div>
+          <div class="caption">участников и внедорожников уже с нами</div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="number">100</div>
+          <div class="caption">готовых маршрута, проверенных временем и местом</div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="number">50</div>
+          <div class="caption">актуальных тем на нашем форуме</div>
         </div>
       </div>
-    </section>
-    <!-- S4 -->
-    <section id="s4" class="s4">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2><span class="blue">Топ 5</span><br /><span class="white">тем форума</span></h2>
-            <div class="forum-list">
-              <div class="preloader"></div>
-            </div>
-            <a class="go-to-forum" href="#" rel="noopener noreferer" target="_blank">Перейти на форум</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- S5 -->
-    <section id="s5" class="s5">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="events-app">
-              <div class="post-preview">
-                <div class="post-preview__title">Заголовок записи</div>
-                <div class="post-preview__date gray">Опубликовано: 16.08.21</div>
-                <p class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                <a href="#" class="post-preview__more">Подробнее >></a>
-              </div>
-              <div id="calendar" class="calendar">
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- S6 -->
-    <section id="s6" class="s6">
-      <!-- MAP -->
-    </section>
+    </div>
+  </section>
 
-    <!-- FOOTER -->
+  <!-- FOOTER -->
     <footer>
 
       <!-- S7 -->
@@ -214,7 +191,7 @@
     
     <!-- SCRIPTS -->
     <!-- SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js" ></script>  </head>

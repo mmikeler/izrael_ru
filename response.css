@@ -1,4 +1,4 @@
-@media (min-width: 769px) {}
+@media (min-width: 768px) {}
 
 @media (max-width: 1000px) {
 
@@ -6,10 +6,6 @@
     h1,
     h2 {
         font-size: 60px !important;
-    }
-
-    .top-bar {
-        position: relative;
     }
 
     .top-bar .container {
@@ -22,16 +18,14 @@
     }
 
     .slogan {
-        display: none;
+        width: 50%;
     }
 
     .nav-wrapper {
-        padding: 0 20px;
+        padding: 0 20px 0 0;
     }
 
-    .tags {
-        flex-direction: column;
-    }
+
 
     .events-app {
         flex-direction: column;
@@ -46,6 +40,26 @@
     }
 }
 
+@media (max-width: 768px) {
+    .we-are {
+        padding: 30px 0;
+    }
+
+    .we-are .title {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .top-bar .container {
+        max-width: none;
+    }
+
+    body.has-stiky {
+        margin-top: 230px;
+    }
+
+}
+
 @media (max-width: 500px) {
 
     h1,
@@ -53,7 +67,96 @@
         font-size: 40px !important;
     }
 
+    .logo {
+        width: 100px;
+    }
+
+    .top-bar {
+        position: relative;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .tags {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    .tags a {
+        padding: 3px;
+    }
+
+    body.has-stiky {
+        margin-top: 80px;
+    }
+
+    .slogan,
+    .nav-wrapper,
+    .logo {
+        display: none;
+    }
+
+    .menu-bar {
+        display: block;
+    }
+
+    .menu-bar.toogle {
+        transform: rotate(90deg);
+    }
+
+    .top-bar-header {
+        padding: 0 15px;
+    }
+
+    .top-bar-header .bbtn {
+        margin-left: 0;
+
+    }
+
+    .top-bar-header .bbtn {
+        background-color: transparent;
+        color: #00b2e4;
+        padding: 0;
+        margin: auto;
+    }
+
+    .nav-wrapper {
+        padding: 20px;
+    }
+
+    .nav-wrapper .main-menu li {
+        width: 50%;
+    }
+
+    .nav-wrapper .main-menu li:nth-child(odd) {
+        text-align: right;
+    }
+
+    .mobile-logo {
+        display: block;
+        width: 60px;
+    }
+
+    .fs .content-wrapper {
+        padding-top: 0;
+    }
+
     .calendar {
         min-width: auto;
+    }
+
+    .about-us__s4 .col-12 {
+        text-align: center;
+    }
+
+    #news-filters {
+        flex-direction: column;
+    }
+
+    #news-filters label {
+        width: 100%;
+        margin: 10px auto;
     }
 }

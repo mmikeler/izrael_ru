@@ -19,6 +19,14 @@ body {
   font-family: 'Normal', serif;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
+body.has-stiky {
+  margin-top: 200px;
+}
+
 /* COLORS */
 .blue {
   color: #00b2e4;
@@ -143,6 +151,22 @@ h2 {
   height: 100%;
 }
 
+.bb {
+  border-bottom: 4px solid #00b2e4;
+}
+
+.box-shadow {
+  box-shadow: 4px 4px 18px rgba(0 0 0 / 23%);
+}
+
+.text-shadow {
+  filter: drop-shadow(4px 4px 18px rgba(251 210 87 / 23%));
+}
+
+.breadcrumbs {
+  font-size: 20px;
+}
+
 /* SVG */
 .triangle-top,
 .triangle-bottom {
@@ -184,4 +208,31 @@ h2 {
 
 footer .socials {
   margin: 30px 0;
+}
+
+/* PAGINATION */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.pagination a {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #b9bcc1;
+  color: #373f4a;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.pagination a.current,
+.pagination a:hover {
+  background-color: #373f4a;
+  color: #fff;
+  text-decoration: none;
 }
