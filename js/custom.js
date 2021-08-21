@@ -24,4 +24,25 @@ $(document).ready(function($){
     
   })
 
+  // Media preview
+  $('.media-preview').on('click', function (e) {
+    const media = e.target.closest('.media-preview').dataset.url;
+    $('.popup-overlay video').attr('src', media);
+    $('.popup-overlay').fadeIn(300);
+    $('body').toggleClass('no-scroll');
+  })
+  $('.popup-overlay i').on('click', function (e) {
+    $(e.target).closest('.popup-overlay').fadeOut(0);
+    $(e.target).closest('.popup-wrapper').find('video').attr('src', '');
+    $('body').toggleClass('no-scroll');
+  })
+  $('.popup-wrapper').on('click', function (e) {
+    $(e.target).closest('.popup-overlay').fadeOut(0);
+    $(e.target).closest('.popup-wrapper').find('video').attr('src', '');
+    $('body').toggleClass('no-scroll');
+  })
+  $('.popup').on('click', function (e) {
+    e.stopPropagation();
+  })
+
 })

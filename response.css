@@ -159,4 +159,18 @@
         width: 100%;
         margin: 10px auto;
     }
+
+    .single-post-meta .outline-bbtn--xsmall {
+        border: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    .single-post-footer {
+        flex-direction: column;
+    }
+
+    .single-post__content {
+        padding: 15px;
+    }
 }
